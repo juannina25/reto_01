@@ -125,7 +125,7 @@ b:hover{
 
 
 
-@media (width < 360px){
+@media (width < 375px){
     main{
         width: 90%;
     }
