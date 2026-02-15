@@ -53,7 +53,7 @@ main{
 }
 .cuadro:hover{
     background-color: var(--Cyan-400);
-    background-image: url(/images/icon-view.svg);
+    background-image: url(images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
