@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+--Blue-500: hsl(215, 51%, 70%);
+--Cyan-400: hsl(178, 100%, 50%);
+--Blue-950: hsl(217, 54%, 11%); /*(main BG)*/
+--Blue-900: hsl(216, 50%, 16%); /*(card BG)*/
+--Blue-800: hsl(215, 32%, 27%); /*(line)*/
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+
+    background-color: var(--Blue-950);
+    height: 100vh;
+    align-content: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: var(--Blue-900);
+    border-radius: 15px;
+    width: 350px;
+
+    box-shadow: 0 20px 100px black;
+}
+ .box-image{
+    padding: 8%;
+ }
+
+.image{
+    border-radius: 20px;
+    align-content: center;
+
+    width: 100%;
+    height: max-content;
+}
+.image:hover{
+    opacity: 10%;
+} 
+.cuadro{
+    border-radius: 20px;
+}
+.cuadro:hover{
+    background-color: var(--Cyan-400);
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+h3{
+    color: var(--White);
+    padding-left: 1.5em;
+    padding-right: 1.5em;;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+h3:hover{
+    color: var(--Cyan-400);
+}
+.description{
+    color: var(--Blue-500);
+    font-weight: 300;
+    padding: 0 1.5em;
+}
+.data{
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    display: flex;
+}
+.data1-1{
+    color: var(--Cyan-400);
+    padding-left: 10px;
+}
+.data2-1{
+    color: var(--Blue-500);
+    padding-left: 10px;
+}
+
+.data1{
+    display: flex;
+    width: 50%;
+}
+
+.data2{
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    padding-right: 1.5em;
+}
+.avatar{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--White)
+}
+
+.user{
+    display: flex;
+    padding: 1.5em;
+}
+
+.text-avatar{
+    align-content: center;
+    padding-left: 10px;
+    color: var(--Blue-500);
+}
+
+b{
+    color: var(--White);
+    font-weight: 400;
+}
+b:hover{
+    color: var(--Cyan-400);
+}
+
+
+
+@media (width < 360px){
+    main{
+        width: 90%;
+    }
+}
